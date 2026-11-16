@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yassine Gharbi | Ingénieur Data Science & Développeur Full-Stack</title>
+    <meta name="description" content="Portfolio professionnel de Yassine Gharbi — Étudiant Ingénieur en Data Science & Informatique (ESPRIT) et Développeur Full-Stack (Next.js, Symfony, Laravel, Python, React Native).">
+    <link rel="icon" type="image/png" href="image/logo.png">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Barre de progression de lecture -->
+    <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+    <!-- Navigation Bar Flottante (Pill) -->
+    <header class="navbar-pill">
+        <a href="#home" class="pill-brand" title="Yassine Gharbi - Accueil">
+            <img src="image/logo.png" alt="YG Logo" class="brand-logo">
+            <span class="brand-text">Yassine.G</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="pill-nav">
+            <a href="#home" class="nav-link active">Accueil</a>
+            <a href="#about" class="nav-link">À propos</a>
+            <a href="#services" class="nav-link">Atouts Pro</a>
+            <a href="#skills" class="nav-link">Compétences</a>
+            <a href="#experience" class="nav-link">Expérience</a>
+            <a href="#projects" class="nav-link">Projets</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- CV Action Button -->
+        <a href="cv/CV-Yassine-Gharbi.pdf" download class="pill-cv-btn" title="Télécharger mon CV">
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span>Mon CV</span>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="pill-menu-toggle" onclick="toggleMobileMenu()" aria-label="Ouvrir le menu">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </button>
+    </header>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-dropdown" class="mobile-dropdown">
+        <nav>
+            <a href="#home" onclick="closeMobileMenu()"><i class="fa-solid fa-house"></i> Accueil</a>
+            <a href="#about" onclick="closeMobileMenu()"><i class="fa-solid fa-user"></i> À propos</a>
+            <a href="#services" onclick="closeMobileMenu()"><i class="fa-solid fa-briefcase"></i> Atouts Entreprise</a>
+            <a href="#skills" onclick="closeMobileMenu()"><i class="fa-solid fa-code"></i> Compétences</a>
+            <a href="#experience" onclick="closeMobileMenu()"><i class="fa-solid fa-timeline"></i> Expérience</a>
+            <a href="#projects" onclick="closeMobileMenu()"><i class="fa-solid fa-laptop-code"></i> Projets</a>
+            <a href="#contact" onclick="closeMobileMenu()"><i class="fa-solid fa-envelope"></i> Contact</a>
+            <a href="cv/CV-Yassine-Gharbi.pdf" download class="dropdown-cv-btn">
+                <i class="fa-solid fa-file-arrow-down"></i> Télécharger mon CV
+            </a>
+        </nav>
+    </div>
+
+    <!-- Section Principale -->
+    <main>
+
+        <!-- =========================
+             HERO SECTION
+        ========================= -->
+        <section id="home" class="hero">
+
+            <!-- Effets de fond ambient glow -->
+            <div class="ambient-glow glow-1"></div>
+            <div class="ambient-glow glow-2"></div>
+            <div class="hero-grid-pattern"></div>
+
+            <div class="hero-container">
+                <!-- Avatar avec halo technologique -->
+                <div class="hero-avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-glow"></div>
+                    <img src="image/yassine.png" alt="Yassine Gharbi" class="hero-avatar">
+                </div>
+
+             
+
+                <h1 class="hero-name">
+                    Bonjour, je suis <span class="gradient-text">Yassine Gharbi</span>
+                </h1>
+
+                <!-- Rôles professionnels clés -->
+                <div class="hero-roles">
+                    <span class="role-badge">
+                        <i class="fa-solid fa-graduation-cap"></i> Étudiant Ingénieur Data Science & Informatique
+                    </span>
+                    <span class="role-badge">
+                        <i class="fa-solid fa-code"></i> Licencié en Multimédia & Dév. Web
+                    </span>
+                    <span class="role-badge highlight-badge">
+                        <i class="fa-solid fa-shield-halved"></i> Profil Full-Stack & Solutions IA
+                    </span>
+                </div>
+
+                <p class="description">
+                    Alliant la rigueur d'ingénierie logicielle et la science des données, je développe des applications 
+                    web et mobiles complètes, robustes et à fort impact métier avec du code propre et des architectures modernes.
+                </p>
+
+                <!-- Boutons d'action -->
+                <div class="hero-buttons">
+                    <a href="#projects" class="primary-btn">
+                        <i class="fa-solid fa-rocket"></i> Voir mes projets
+                    </a>
+                    <a href="cv/CV-Yassine-Gharbi.pdf" download class="accent-btn">
+                        <i class="fa-solid fa-file-arrow-down"></i> Télécharger mon CV
+                    </a>
+                    <a href="#contact" class="secondary-btn">
+                        <i class="fa-solid fa-paper-plane"></i> Me contacter
+                    </a>
+                </div>
+
+                <!-- Métriques d'Impact pour les Recruteurs / Entreprises -->
+                <div class="hero-metrics">
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-number">3+</span>
+                            <i class="fa-solid fa-calendar-check metric-icon"></i>
+                        </div>
+                        <span class="metric-label">Années de pratique</span>
+                        <span class="metric-sub">Dév. Web, Mobile & Data</span>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-number">10+</span>
+                            <i class="fa-solid fa-microchip metric-icon"></i>
+                        </div>
+                        <span class="metric-label">Technologies maîtrisées</span>
+                        <span class="metric-sub">Next.js, Symfony, Python, etc.</span>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-number">4</span>
+                            <i class="fa-solid fa-diagram-project metric-icon"></i>
+                        </div>
+                        <span class="metric-label">Projets majeurs livrés</span>
+                        <span class="metric-sub">Applications web & mobiles</span>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-number">100%</span>
+                            <i class="fa-solid fa-handshake-angle metric-icon"></i>
+                        </div>
+                        <span class="metric-label">Rigueur & Délais</span>
+                        <span class="metric-sub">Méthodologies Agiles / Scrum</span>
+                    </div>
+                </div>
+
+                <p class="location">
+                    <i class="fa-solid fa-location-dot"></i> Tunisie • Ouvert aux opportunités (Présentiel, Hybride, Distanciel)
+                </p>
+            </div>
+
+        </section>
+
+        <!-- =========================
+             SECTION : À PROPOS
+        ========================= -->
+        <section id="about" class="about">
+
+            <div class="section-title">
+                <span class="section-badge"><i class="fa-solid fa-user-check"></i> PROFIL PROFESSIONNEL</span>
+                <h2>Découvrez mon parcours</h2>
+                <p class="section-subtitle">Un double profil stratégique : l'agilité du développement web alliée à l'analyse de données avancée.</p>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-text">
+                    <h3>
+                        Je suis Yassine Gharbi, 
+                        <span>futur ingénieur passionné par la valeur technologique.</span>
+                    </h3>
+
+                    <p>
+                        Titulaire d'une <strong>Licence en Multimédia et Développement Web</strong> de l'ISET Nabeul, 
+                        je poursuis actuellement mon cycle ingénieur en <strong>Data Science et Informatique à ESPRIT</strong>. 
+                        Cette combinaison unique me permet d'appréhender les projets logiciels de bout en bout : 
+                        de la conception d'interfaces fluides et ergonomiques jusqu'à l'implémentation d'architectures backend robustes et de modèles intelligents.
+                    </p>
+
+                    <p>
+                        Mon approche repose sur l'adoption des standards modernes de l'industrie : <strong>Clean Code</strong>, 
+                        architectures modulaires (MVC, micro-services), intégration continue et collaboration agile. 
+                        Je maîtrise des écosystèmes majeurs tels que <strong>Next.js, React, Symfony, Laravel, Spring Boot, Python</strong> 
+                        et les bases de données relationnelles <strong>PostgreSQL et MySQL</strong>.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Autonomie technique et capacité rapide d'apprentissage</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Sens élevé de la responsabilité et du respect des engagements</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Excellente aisance relationnelle et esprit de travail en équipe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-cards">
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h4>Cycle Ingénieur</h4>
+                            <p>Data Science & Informatique — ESPRIT</p>
+                            <span class="card-tag">En cours</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div>
+                            <h4>Licence Nationale</h4>
+                            <p>Multimédia & Dév. Web — ISET Nabeul</p>
+                            <span class="card-tag">Diplômé</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div>
+                            <h4>Développement Full-Stack</h4>
+                            <p>Web, Mobile & APIs RESTful sécurisées</p>
+                            <span class="card-tag">Spécialité</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div>
+                            <h4>Data & Intelligence Artificielle</h4>
+                            <p>Traitement de données, Machine Learning & Python</p>
+                            <span class="card-tag">Ingénierie</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             SECTION : ATOUTS POUR LES ENTREPRISES
+        ========================= -->
+        <section id="services" class="services">
+
+            <div class="section-title">
+                <span class="section-badge"><i class="fa-solid fa-building"></i> VALEUR AJOUTÉE ENTREPRISE</span>
+                <h2>Ce que j'apporte à votre équipe</h2>
+                <p class="section-subtitle">Des compétences concrètes et adaptées aux exigences des entreprises technologiques modernes.</p>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3>Ingénierie Web & Mobile Full-Stack</h3>
+                    <p>
+                        Conception d'applications robustes, responsives et ergonomiques. Maîtrise des frameworks 
+                        leaders côté frontend et backend pour livrer des produits immédiatement exploitables.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Next.js, React, Angular & React Native</li>
+                        <li><i class="fa-solid fa-check"></i> Symfony, Laravel & Spring Boot</li>
+                        <li><i class="fa-solid fa-check"></i> Modélisation SQL (PostgreSQL, MySQL, Prisma)</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3>Data Science & Solutions IA</h3>
+                    <p>
+                        Exploitation intelligente des données d'entreprise : pipelines de traitement, modélisation 
+                        analytique et intégration de briques IA pour automatiser et optimiser la prise de décision.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Analyse & préparation de données avec Python</li>
+                        <li><i class="fa-solid fa-check"></i> Modèles de Machine Learning & prédictifs</li>
+                        <li><i class="fa-solid fa-check"></i> Intégration d'IA dans les flux métiers</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>Qualité Logicielle & Rigueur</h3>
+                    <p>
+                        Production d'un code propre, testable, sécurisé et maintenable selon les standards de 
+                        l'industrie logicielle (Clean Code, principes SOLID, documentation technique claire).
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Gestion de versions collaborative avec Git & GitHub</li>
+                        <li><i class="fa-solid fa-check"></i> Sécurisation des flux & contrôle d'accès</li>
+                        <li><i class="fa-solid fa-check"></i> Bonnes pratiques d'architecture logicielle</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-people-arrows"></i>
+                    </div>
+                    <h3>Méthodes Agiles & Fiabilité</h3>
+                    <p>
+                        Parfaite intégration dans les équipes projets, communication transparente, respect strict 
+                        des délais et participation active à l'organisation collective du travail.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Travail en mode Agile / rituels Scrum</li>
+                        <li><i class="fa-solid fa-check"></i> Respect rigoureux des plannings de livraison</li>
+                        <li><i class="fa-solid fa-check"></i> Résolution proactive des blocages techniques</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             SECTION : COMPÉTENCES
+        ========================= -->
+        <section id="skills" class="skills">
+
+            <div class="section-title">
+                <span class="section-badge"><i class="fa-solid fa-code"></i> STACK TECHNIQUE</span>
+                <h2>Compétences & Écosystème</h2>
+                <p class="section-subtitle">Visualisez mon écosystème interactif et découvrez ma palette technique organisée par domaine.</p>
+            </div>
+
+            <!-- Galaxy Visuelle Interactive -->
+            <div class="skills-galaxy-container">
+                <div class="skills-orbit orbit-1"></div>
+                <div class="skills-orbit orbit-2"></div>
+                
+                <div class="skills-galaxy">
+                    <!-- Nœud central -->
+                    <div class="skill-node hub">
+                        <span>SKILLS<br>HUB</span>
+                    </div>
+
+                    <!-- Satellites orbitaux -->
+                    <div class="skill-node satellite s-angular">
+                        <span>Angular</span>
+                    </div>
+                    <div class="skill-node satellite s-devops">
+                        <span>Git<br>GitHub</span>
+                    </div>
+                    <div class="skill-node satellite s-backend">
+                        <span>Java<br>Spring Boot</span>
+                    </div>
+                    <div class="skill-node satellite s-cms">
+                        <span>PHP<br>Symfony</span>
+                    </div>
+                    <div class="skill-node satellite s-ai">
+                        <span>Python<br>Data Science</span>
+                    </div>
+                    <div class="skill-node satellite s-database">
+                        <span>MySQL<br>PostgreSQL</span>
+                    </div>
+                    <div class="skill-node satellite s-mobile">
+                        <span>React Native</span>
+                    </div>
+                    <div class="skill-node satellite s-react">
+                        <span>React<br>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grille de compétences structurée pour les Recruteurs -->
+            <div class="skills-structured">
+
+                <div class="skills-cat-card">
+                    <div class="cat-header">
+                        <i class="fa-solid fa-display"></i>
+                        <h3>Frontend & Mobile</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="skill-tag"><i class="fa-solid fa-bolt"></i> Next.js</span>
+                        <span class="skill-tag"><i class="fa-brands fa-angular"></i> Angular</span>
+                        <span class="skill-tag"><i class="fa-solid fa-mobile-screen"></i> React Native</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript / ES6+</span>
+                        <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+                    </div>
+                </div>
+
+                <div class="skills-cat-card">
+                    <div class="cat-header">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Backend & Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-symfony"></i> Symfony</span>
+                        <span class="skill-tag"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                        <span class="skill-tag"><i class="fa-brands fa-java"></i> Java / Spring Boot</span>
+                        <span class="skill-tag"><i class="fa-brands fa-php"></i> PHP</span>
+                        <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> APIs RESTful</span>
+                    </div>
+                </div>
+
+                <div class="skills-cat-card">
+                    <div class="cat-header">
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>Data Science & IA</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> Machine Learning</span>
+                        <span class="skill-tag"><i class="fa-solid fa-database"></i> Analyse de données</span>
+                        <span class="skill-tag"><i class="fa-solid fa-robot"></i> Intégration IA</span>
+                        <span class="skill-tag"><i class="fa-solid fa-chart-pie"></i> Visualisation</span>
+                    </div>
+                </div>
+
+                <div class="skills-cat-card">
+                    <div class="cat-header">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Bases de Données & Outils</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+                        <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fa-solid fa-cube"></i> Prisma ORM</span>
+                        <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git / GitHub</span>
+                        <span class="skill-tag"><i class="fa-solid fa-list-check"></i> Méthodes Agiles</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             SECTION : EXPÉRIENCE
+        ========================= -->
+        <section id="experience" class="experience">
+
+            <div class="section-title">
+                <span class="section-badge"><i class="fa-solid fa-timeline"></i> IMMERSION PROFESSIONNELLE</span>
+                <h2>Expérience en Entreprise</h2>
+                <p class="section-subtitle">Des missions concrètes en entreprise validées avec rigueur et félicitations.</p>
+            </div>
+
+            <div class="experience-container">
+
+                <!-- Expérience 1 -->
+                <div class="experience-card">
+                    <div class="experience-date-col">
+                        <div class="experience-date">
+                            <i class="fa-regular fa-calendar"></i> Juin — Juillet 2026
+                        </div>
+                        <span class="exp-duration">2 mois</span>
+                        <span class="exp-badge">Stage Développeur</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <img src="image/teknoisland.png" alt="Tekno Island" class="company-logo">
+                            <div>
+                                <h3>Stage Développement Web</h3>
+                                <h4>Tekno Island — Hammamet</h4>
+                            </div>
+                        </div>
+
+                        <p>
+                            Participation active au développement et à l'optimisation d'applications web d'entreprise 
+                            au sein d'un environnement professionnel collaboratif.
+                        </p>
+
+                        <ul class="exp-points">
+                            <li>Conception et développement de fonctionnalités web modulaires.</li>
+                            <li>Travail en équipe et coordination technique sur les différentes phases du cycle projet.</li>
+                            <li>Respect scrupuleux des délais et atteinte des objectifs fixés.</li>
+                            <li>Contribution proactive à l'organisation et aux bonnes pratiques de code.</li>
+                        </ul>
+
+                        <div class="exp-tags">
+                            <span>Développement Web</span>
+                            <span>Travail en équipe</span>
+                            <span>Agilité</span>
+                            <span>Qualité Logicielle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expérience 2 -->
+                <div class="experience-card featured-exp">
+                    <div class="experience-date-col">
+                        <div class="experience-date">
+                            <i class="fa-regular fa-calendar"></i> Janvier — Mai 2025
+                        </div>
+                        <span class="exp-duration">5 mois</span>
+                        <span class="exp-badge pfe-badge">Projet de Fin d'Études (PFE)</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <img src="image/hiservice.png" alt="Hammamet Informatique Service" class="company-logo">
+                            <div>
+                                <h3>Projet de Fin d'Études (PFE) — Multimédia & Dév. Web</h3>
+                                <h4>Société Hammamet Informatique Service (ISET Nabeul)</h4>
+                            </div>
+                        </div>
+
+                        <p>
+                            Réalisation de bout en bout de la plateforme complète de loisirs <strong>LoisirHub</strong> 
+                            combinant une interface web moderne et une application mobile réactive.
+                        </p>
+
+                        <ul class="exp-points">
+                            <li>Développement du backend avec Laravel et APIs RESTful sécurisées.</li>
+                            <li>Conception de l'application mobile avec React Native et du frontend web avec React.</li>
+                            <li>Respect strict du calendrier de projet, des sprints et des livrables finaux.</li>
+                            <li>Soutenance réussie et validation académique & professionnelle avec d'excellents résultats.</li>
+                        </ul>
+
+                        <div class="exp-tags">
+                            <span>Laravel</span>
+                            <span>React Native</span>
+                            <span>React</span>
+                            <span>MySQL</span>
+                            <span>Architecture REST</span>
+                            <span>PFE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expérience 3 -->
+                <div class="experience-card">
+                    <div class="experience-date-col">
+                        <div class="experience-date">
+                            <i class="fa-regular fa-calendar"></i> Janvier 2024
+                        </div>
+                        <span class="exp-duration">1 mois</span>
+                        <span class="exp-badge">Stage de Perfectionnement</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <img src="image/neapolis.png" alt="Néapolis Arts" class="company-logo">
+                            <div>
+                                <h3>Stage de Perfectionnement — E-Commerce</h3>
+                                <h4>Société Néapolis Arts Nabeul</h4>
+                            </div>
+                        </div>
+
+                        <ul class="exp-points">
+                            <li>Création d'une plateforme d'e-commerce complète avec gestion du catalogue, panier et administration.</li>
+                            <li>Implémentation sous Symfony & PHP avec base de données MySQL structurée.</li>
+                            <li>Participation aux revues de code et respect des exigences techniques.</li>
+                        </ul>
+
+                        <div class="exp-tags">
+                            <span>Symfony</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>E-Commerce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expérience 4 -->
+                <div class="experience-card">
+                    <div class="experience-date-col">
+                        <div class="experience-date">
+                            <i class="fa-regular fa-calendar"></i> Janvier 2023
+                        </div>
+                        <span class="exp-duration">1 mois</span>
+                        <span class="exp-badge">Stage d'Initiation</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <img src="image/iconconcept.png" alt="Icon Concept" class="company-logo">
+                            <div>
+                                <h3>Stage d'Initiation Professionnelle</h3>
+                                <h4>Société Icon Concept Hammamet</h4>
+                            </div>
+                        </div>
+
+                        <ul class="exp-points">
+                            <li>Immersion directe dans le monde de l'entreprise et découverte des exigences du marché.</li>
+                            <li>Travail sur les stratégies de marketing d'influence et communication digitale.</li>
+                            <li>Participation active aux réunions d'équipe et suivi des objectifs.</li>
+                        </ul>
+
+                        <div class="exp-tags">
+                            <span>Marketing Digital</span>
+                            <span>Communication</span>
+                            <span>Découverte Entreprise</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             SECTION : PROJETS
+        ========================= -->
+        <section id="projects" class="projects">
+
+            <div class="section-title">
+                <span class="section-badge"><i class="fa-solid fa-laptop-code"></i> PORTFOLIO TECHNIQUE</span>
+                <h2>Projets & Réalisations</h2>
+                <p class="section-subtitle">Chaque projet illustre une compétence concrète : architecture, intégration de données, ergonomie et code performant.</p>
+            </div>
+
+            <!-- Boutons de filtrage interactifs -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fa-solid fa-border-all"></i> Tous les projets
+                </button>
+                <button class="filter-btn" data-filter="fullstack">
+                    <i class="fa-solid fa-layer-group"></i> Full-Stack
+                </button>
+                <button class="filter-btn" data-filter="data-ai">
+                    <i class="fa-solid fa-brain"></i> Data & IA
+                </button>
+                <button class="filter-btn" data-filter="mobile">
+                    <i class="fa-solid fa-mobile-screen"></i> Mobile
+                </button>
+                <button class="filter-btn" data-filter="ecommerce">
+                    <i class="fa-solid fa-cart-shopping"></i> E-Commerce
+                </button>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Projet 1 : Smart Ferme -->
+                <article class="project-card" data-category="fullstack data-ai">
+
+                    <div class="project-video">
+                        <video controls poster="image/logo.png">
+                            <source src="videos/smart-ferme.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la vidéo.
+                        </video>
+                        <span class="project-type"><i class="fa-solid fa-brain"></i> Next.js & IA</span>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header-info">
+                            <h3>Smart Ferme</h3>
+                            <span class="project-status-dot" title="Projet complet"></span>
+                        </div>
+
+                        <p>
+                            Application web avancée de gestion agricole connectée : supervision intelligente des exploitations, 
+                            terrains, animaux, prévisions de récoltes et gestion financière intégrée.
+                        </p>
+
+                        <div class="project-tech">
+                            <span><i class="fa-brands fa-react"></i> Next.js</span>
+                            <span><i class="fa-solid fa-database"></i> PostgreSQL</span>
+                            <span><i class="fa-solid fa-cube"></i> Prisma</span>
+                            <span><i class="fa-solid fa-robot"></i> Algorithmes IA</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://github.com/yassigh/smart-farming.git" class="project-btn" target="_blank" title="Code source GitHub">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="videos/smart-ferme.mp4" class="project-btn primary-project-btn" target="_blank" title="Regarder la démo">
+                                <i class="fa-solid fa-play"></i> Démo
+                            </a>
+                            <a href="details/smart-ferme.html" class="project-btn" title="Consulter les détails du projet">
+                                <i class="fa-solid fa-circle-info"></i> Détails
+                            </a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Projet 2 : LoisirHub -->
+                <article class="project-card" data-category="fullstack mobile">
+
+                    <div class="project-image">
+                        <div class="project-placeholder-visual">
+                            <i class="fa-solid fa-compass"></i>
+                            <span class="visual-sub">Web & Mobile Platform</span>
+                        </div>
+                        <span class="project-type"><i class="fa-solid fa-mobile-screen"></i> Web & Mobile PFE</span>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header-info">
+                            <h3>LoisirHub</h3>
+                            <span class="project-status-dot" title="Projet complet"></span>
+                        </div>
+
+                        <p>
+                            Plateforme web et mobile innovante permettant de découvrir, réserver et gérer des activités de loisirs, 
+                            avec gestion des prestataires, géolocalisation et système de réservation en temps réel.
+                        </p>
+
+                        <div class="project-tech">
+                            <span><i class="fa-brands fa-laravel"></i> Laravel</span>
+                            <span><i class="fa-brands fa-react"></i> React Native</span>
+                            <span><i class="fa-brands fa-react"></i> React Web</span>
+                            <span><i class="fa-solid fa-database"></i> MySQL</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://github.com/yassigh/Loisir_hub.git" class="project-btn" target="_blank" title="Code source GitHub">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-btn primary-project-btn" title="Démonstration">
+                                <i class="fa-solid fa-globe"></i> Démo
+                            </a>
+                            <a href="details/loisir-hub.html" class="project-btn" title="Consulter les détails du projet">
+                                <i class="fa-solid fa-circle-info"></i> Détails
+                            </a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Projet 3 : 5ademni.tn -->
+                <article class="project-card" data-category="fullstack">
+
+                    <div class="project-video">
+                        <video controls poster="image/logo.png">
+                            <source src="videos/5ademni.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la vidéo.
+                        </video>
+                        <span class="project-type"><i class="fa-brands fa-symfony"></i> Symfony App</span>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header-info">
+                            <h3>5ademni.tn</h3>
+                            <span class="project-status-dot" title="Projet complet"></span>
+                        </div>
+
+                        <p>
+                            Application web professionnelle développée sous le framework Symfony pour la mise en relation pour l'emploi, 
+                            gestion des annonces, candidatures dynamiques et tableau de bord recruteurs.
+                        </p>
+
+                        <div class="project-tech">
+                            <span><i class="fa-brands fa-symfony"></i> Symfony</span>
+                            <span><i class="fa-brands fa-php"></i> PHP</span>
+                            <span><i class="fa-solid fa-database"></i> MySQL</span>
+                            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://github.com/rg-esprit/5ademni.tn.git" class="project-btn" target="_blank" title="Code source GitHub">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="videos/5ademni.mp4" class="project-btn primary-project-btn" target="_blank" title="Regarder la démo">
+                                <i class="fa-solid fa-play"></i> Démo
+                            </a>
+                            <a href="details/5ademni.html" class="project-btn" title="Consulter les détails du projet">
+                                <i class="fa-solid fa-circle-info"></i> Détails
+                            </a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Projet 4 : E-commerce Néapolis -->
+                <article class="project-card" data-category="fullstack ecommerce">
+
+                    <div class="project-video">
+                        <video controls poster="image/logo.png">
+                            <source src="videos/e-commerce.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la vidéo.
+                        </video>
+                        <span class="project-type"><i class="fa-solid fa-cart-shopping"></i> E-Commerce</span>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header-info">
+                            <h3>E-Commerce Néapolis Arts</h3>
+                            <span class="project-status-dot" title="Projet complet"></span>
+                        </div>
+
+                        <p>
+                            Boutique en ligne complète développée lors de mon stage chez Neapolis Arts. 
+                            Gestion des articles d'art, panier, commande, sécurisation et espace d'administration complet.
+                        </p>
+
+                        <div class="project-tech">
+                            <span><i class="fa-brands fa-symfony"></i> Symfony</span>
+                            <span><i class="fa-brands fa-php"></i> PHP</span>
+                            <span><i class="fa-solid fa-database"></i> MySQL</span>
+                            <span><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://github.com/yassigh/app-e-commerce.git" class="project-btn" target="_blank" title="Code source GitHub">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="videos/e-commerce.mp4" class="project-btn primary-project-btn" target="_blank" title="Regarder la démo">
+                                <i class="fa-solid fa-play"></i> Démo
+                            </a>
+                            <a href="details/e-commerce.html" class="project-btn" title="Consulter les détails du projet">
+                                <i class="fa-solid fa-circle-info"></i> Détails
+                            </a>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SECTION : CONTACT
+        ========================= -->
+        <section id="contact" class="contact">
+
+            <div class="section-title">
+                <span class="section-badge"><i class="fa-solid fa-envelope-open-text"></i> CONTACT PROFESSIONNEL</span>
+                <h2>Travaillons ensemble</h2>
+                <p class="section-subtitle">Une question, une offre de stage, un projet ou une opportunité d'embauche ? N'hésitez pas à me joindre.</p>
+            </div>
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+                    <h3>Discutons de vos besoins</h3>
+                    <p>
+                        Disponible et réactif, je suis à votre disposition pour vous présenter plus en détail mes réalisations, 
+                        mon profil et ma vision pour vos projets techniques.
+                    </p>
+
+                    <!-- Item Email avec copie en 1 clic -->
+                    <div class="contact-item copyable-email" id="emailCopyCard" title="Cliquer pour copier l'adresse email">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <div class="contact-item-text">
+                            <h4>Email professionnel</h4>
+                            <span class="email-display" id="emailToCopy">yassinegharbi158@gmail.com</span>
+                            <span class="copy-badge" id="copyBadge"><i class="fa-solid fa-copy"></i> Copier l'adresse</span>
+                        </div>
+                    </div>
+
+                    <!-- Item LinkedIn -->
+                    <div class="contact-item">
+                        <span><i class="fa-brands fa-linkedin"></i></span>
+                        <div class="contact-item-text">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/yassine-gharbi-930426330/" target="_blank" rel="noopener noreferrer">
+                                linkedin.com/in/yassine-gharbi
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item GitHub -->
+                    <div class="contact-item">
+                        <span><i class="fa-brands fa-github"></i></span>
+                        <div class="contact-item-text">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/yassigh" target="_blank" rel="noopener noreferrer">
+                                github.com/yassigh
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item Localisation & Mobilité -->
+                    <div class="contact-item">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <div class="contact-item-text">
+                            <h4>Localisation & Mobilité</h4>
+                            <p class="location-sub">Tunisie (Grand Tunis, Nabeul) • Ouvert au distanciel & mobilité</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire de contact -->
+                <div class="contact-form">
+                    <div class="form-header">
+                        <h3>Envoyer un message direct</h3>
+                    </div>
+
+                    <form action="https://formsubmit.co/yassinegharbi158@gmail.com" method="POST" id="mainContactForm">
+                        <!-- Anti-spam honeypot -->
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <div class="form-group">
+                            <label for="form-name">Nom complet ou Entreprise *</label>
+                            <input type="text" id="form-name" name="name" placeholder="Ex: Jean Dupont (Société X)" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email">Adresse Email *</label>
+                            <input type="email" id="form-email" name="email" placeholder="nom@entreprise.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-subject">Sujet de votre message *</label>
+                            <input type="text" id="form-subject" name="subject" placeholder="Ex: Opportunité de Stage PFE / Échange technique" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Votre Message *</label>
+                            <textarea id="form-message" name="message" rows="5" placeholder="Décrivez votre projet, vos attentes ou votre opportunité..." required></textarea>
+                        </div>
+
+                        <button type="submit" id="submitBtn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Envoyer le message</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+    <footer class="footer">
+
+        <div class="footer-brand">
+            <img src="image/logo.png" alt="YG Logo" class="footer-logo">
+            <div class="footer-brand-text">
+                <span class="footer-brand-name">Yassine Gharbi</span>
+                <span class="footer-tagline">Étudiant Ingénieur Data Science & Informatique</span>
+            </div>
+        </div>
+
+        <p class="footer-copy">
+            © 2026 Yassine Gharbi. Tous droits réservés. Conçu avec rigueur et passion.
+        </p>
+
+        <div class="footer-links">
+            <a href="https://github.com/yassigh" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/yassine-gharbi-930426330/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:yassinegharbi158@gmail.com" title="Envoyer un email" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="cv/CV-Yassine-Gharbi.pdf" download title="Télécharger CV" aria-label="CV">
+                <i class="fa-solid fa-file-pdf"></i>
+            </a>
+        </div>
+
+    </footer>
+
+    <!-- Bouton flottant Retour en Haut -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Remonter en haut de page" title="Remonter en haut">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification Popup pour Copie Email -->
+    <div id="copyToast" class="copy-toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Adresse email copiée dans le presse-papier !</span>
+    </div>
+
+    <!-- Scripts JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
